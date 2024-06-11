@@ -68,7 +68,7 @@ public extension RichTextStyle {
                     .contentShape(Rectangle())
             }
             .tint(.accentColor, if: isOn)
-            .foreground(Color(red: 220, green: 30, blue: 101), if: isOn)
+            .foreground(Color(red: 220 / 255, green: 30 / 255, blue: 101 / 255), if: isOn)
             .keyboardShortcut(for: style)
             .accessibilityLabel(style.title)
         }
